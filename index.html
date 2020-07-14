@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 | 关于本文档 </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"关于本文档","path":"index.html"},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"SWAGGER","type":"label"},{"text":"UI","type":"link","path":"swagger/ui.html"},{"text":"To HTML","type":"link","path":"swagger/to-html.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Raise an Issue on Github","type":"link","path":"https://github.bus.zalan.do/stargate/hexo-stargate-doc-theme-seed/issues/new"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="关于本文档"><a href="#关于本文档" class="headerlink" title="关于本文档"></a>关于本文档</h1><hr>
+<p>本文档翻译自 Haxe 3 官方手册。因此，它不是一个初学者教程，并不会教你如何编程。然而，主题都被粗略设计为便于阅读，对相关话题进行引用，如，一些之前看到的，和尚未了解的。在一些情况下，如果可以便于解释，一个较早的章节会使用后面的一些章节的信息。这些引用将有相应的连接，提前阅读这些话题，通常不是什么问题。</p>
+<p>我们会使用很多 Haxe 源代码来保持理论和实际的连接。这些代码示例通常是完整的程序，并带有一个 <code>main</code> 函数，它们都可以被编译。然而，有时候只有最重要的部分被展示出来。源代码看起来就像这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Haxe code here</span><br></pre></td></tr></table></figure>
+<p>偶尔我们会演示 Haxe 代码是如何被生成的，对于这些内容，通常会以 JavaScript 目标平台的输出作为解释。此外，在本文档中我们定义了一组术语。主要用于引入一个新的类型或是一个 Haxe 专用术语。我们不会定义每个新引入的概念，譬如什么是类，以避免弄乱文本。定义看起来像这样：</p>
+<blockquote>
+<p><strong>定义</strong>: 定义名称<br> 定义描述</p>
+</blockquote>
+<p>文档中的一些地方还有一些花絮框。这些包括非正式的信息，如为什么在 Haxe 的开发中做出某些决定，或者过去的 Haxe 版本中的某些实际功能的改变等。这类信息通常不是很重要，你可以选择跳过，因为它们只是为了传达一些花絮。花絮看起来像这样：</p>
+<blockquote>
+<p>花絮: 关于花絮<br>花絮内容</p>
+</blockquote>
+<p><strong>本站目前还在建设中…本站文档由 Hexo + Doc 生成，以下来自 Doc 主题种子模板默认生成内容：</strong></p>
+<h1 id="hexo-theme-doc-seed"><a href="#hexo-theme-doc-seed" class="headerlink" title="hexo-theme-doc-seed"></a>hexo-theme-doc-seed</h1><p>This project is a skeleton for a documentation website using <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> and <a href="https://github.com/zalando-incubator/hexo-theme-doc" target="_blank" rel="noopener">hexo-theme-doc</a>.<br>You can use it to quickly bootstrap your documentation website.</p>
+<p>The seed contains the required structure and files to use Hexo and the theme, plus dummy content to show the usage of the main features of the theme.</p>
+<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><p>To get started have a look first to the <a href="https://zalando-incubator.github.io/hexo-theme-doc/get-started.html#Requirements" target="_blank" rel="noopener">requirements</a>, then install <code>hexo-cli</code> with:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>Now just clone <code>hexo-theme-doc-seed</code> repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/zalando-incubator/hexo-theme-doc-seed.git &lt;directory&gt;</span><br></pre></td></tr></table></figure>
+<p>Go into the resulting directory and install dependencies:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>Start the preview server locally with:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>If you open your browser at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> you should see the documentation website up and running.</p>
+</blockquote>
+<h2 id="More-Informations"><a href="#More-Informations" class="headerlink" title="More Informations"></a>More Informations</h2><p>For more informations please visit the <a href="https://zalando-incubator.github.io/hexo-theme-doc/" target="_blank" rel="noopener">user documentation website</a>.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
