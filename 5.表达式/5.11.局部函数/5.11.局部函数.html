@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"5.表达式/5.11.局部函数/5.11.局部函数.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="5-11-局部函数"><a href="#5-11-局部函数" class="headerlink" title="5.11.局部函数"></a>5.11.局部函数</h1><p>Haxe 支持表达式中使用 类级 函数声明也支持 局部 函数声明。其语法遵循类字段方法（4.3）的语法：</p>
+<p>Haxe supports ﬁrst-class functions and allows declaring local functions in expressions. The syntax follows class ﬁeld methods (4.3):</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        <span class="keyword">var</span> value = <span class="number">1</span>; </span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">myLocalFunction</span></span>(i) &#123; </span><br><span class="line">            <span class="keyword">return</span> value + i; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="built_in">trace</span>(myLocalFunction(<span class="number">2</span>)); <span class="comment">// 3 </span></span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们声明了一个 <code>myLocalFunction</code> 位于类字段 <code>main</code> 的块表达式（5.1）中。它接受一个参数，并对参数加上外部作用域中定义的 <code>value</code> 的值。</p>
+<p>We declare myLocalFunction inside the block expression (5.1) of the main class ﬁeld. It takes one argument i and adds it to value, which is deﬁned in the outside scope.</p>
+<p>其作用域等同于 变量（5.10）的作用域，且大多数情况下声明一个带命名的局部函数实际上可以被看作是把一个匿名函数赋值到一个变量上：</p>
+<p>The scoping is equivalent to that of variables (5.10) and for the most part writing a named local function can be considered equal to assigning an unnamed local function to a local variable:</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myLocalFunction = <span class="function"><span class="keyword">function</span></span>(a) &#123; &#125;</span><br></pre></td></tr></table></figure>
+<p>但是当涉及类型参数（3.2）以及函数所处位置时有些不同。当一个函数在声明时没有被赋值给任何变量，我们称它为 ‘lvalue’ 函数，反之称其为 ‘rvalue’ 函数</p>
+<ul>
+<li>lvalue 函数<strong>需要</strong>一个名字，且可以具有类型参数（3.2）</li>
+<li>rvalue 函数不一定有名字，但不可以具有类型参数</li>
+</ul>
+<p>However, there are some differences related to type parameters and the position of the function. We speak of a “lvalue” function if it is not assigned to anything upon its declaration, and an “rvalue” function otherwise.</p>
+<ul>
+<li>Lvalue functions require a name and can have type parameters (3.2).</li>
+<li>Rvalue functions may have a name, but cannot have type parameters.</li>
+</ul>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span></span>()&#123;&#125;; <span class="comment">// 这是一个 rvalue 函数, 它有名字，可以通过 func 这个 “名字” 来调用它</span></span><br><span class="line"><span class="function"><span class="keyword">function</span></span>()&#123;&#125;; <span class="comment">// 同样这也是一个 rvalue 函数，但是它没有名字，是个孤儿, 但是除非作为某个函数参数，否则单独这样放在某个语句块会报错。</span></span><br><span class="line">function hasName &lt;T&gt; ()&#123;&#125;; // 这是一个 lvalue 函数可以具有类型参数</span><br><span class="line"></span><br><span class="line">var funFact = function gotNamed&lt;T&gt;(x:T)&#123; trace('T is: $&#123;x&#125;'); &#125;; // 这样的声明不可行，尽管 gotNamed 是 lvalue 但是编译器会认为 funFact 实际上是作为 rvalue 使用，所以编译器会抛出错误提示；所以其实这种写法并不能作为某个参数来传递</span><br><span class="line"><span class="keyword">var</span> funFact = hasName; <span class="comment">// 但是这样可以， 此时相当于 lvalue 函数 hasName 的另外一个别名为 funFact 。。。</span></span><br></pre></td></tr></table></figure>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

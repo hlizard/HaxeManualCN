@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"8.编译器功能/8.5.运行时类型信息/8.5.1.RTTI 结构.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="8-5-1-RTTI-结构"><a href="#8-5-1-RTTI-结构" class="headerlink" title="8.5.1.RTTI 结构"></a>8.5.1.RTTI 结构</h1><p><strong>一般类型信息：</strong></p>
+<ul>
+<li>path: path 类型（第3.7节）的类型路径</li>
+<li>module:包含这个类型的模块（第3.7节）的类型路径</li>
+<li>ﬁle: 包含这个类型的 .hx 文件的完整的斜线路径。在没有这个文件的时候可以为 null，例如，如果这个类型通过一个宏（第9章）来定义。</li>
+<li>params: 一个字符串类型的数组，表示这个类型的类型参数（第3.2节）的名称。自Haxe 3.2.0起，这不包括约束（第3.2.1节）。</li>
+<li>doc: 类型的文档。这个信息只有编译器标记（第6.1节） -D use_rtti_doc 被涉及的时候才可用。否则，或者如果类型没有文档，值为 null 。</li>
+<li>isPrivate: 是否类型为 私有（第3.7.1节）。</li>
+<li>platforms: 一个字符串列表，表示类型可用的目标平台。</li>
+<li>meta: 类型被注解的元数据。</li>
+</ul>
+<p><strong>类类型信息：</strong></p>
+<ul>
+<li>isExtern: 是否类为 外部的（第6.2节）</li>
+<li>isInterface: 是否类实际上是一个接口（第2.3.3节）。</li>
+<li>superClass: 被它的类型路径和类型参数列表定义的它的父类。</li>
+<li>interfaces: 被它们的类型路径和类型参数列表定义的接口列表。</li>
+<li>ﬁelds: 成员类字段（第4章）列表，描述为类字段信息（第8.5.1节）。</li>
+<li>statics: 静态类字段列表，描述为类字段信息（第8.5.1节）。</li>
+<li>tdynamic: 如果没有这样的类型存在则为被通过类或者null动态实现（第2.7.2节）的类型。</li>
+</ul>
+<p><strong>枚举类型信息：</strong></p>
+<ul>
+<li>isExtern: 枚举是否为外部的（第6.2节）。</li>
+<li>constructors: 枚举的构造函数列表。</li>
+</ul>
+<p><strong>抽象类型信息：</strong></p>
+<ul>
+<li>to:一个包含隐式定义 to 转换（第2.8.1节）的数组。</li>
+<li>from: 一个包含隐式定义 from 转换（第2.8.1节）的数组。</li>
+<li>impl: 实现类的类型信息（第8.5.1节）。</li>
+<li>athis: 抽象类型的潜在类型（第2.8节）。</li>
+</ul>
+<p><strong>类字段信息：</strong></p>
+<ul>
+<li>name: 字段名。</li>
+<li>type: 字段类型。</li>
+<li>isPublic: 字段是否为 public（第4.4.1节）类型。</li>
+<li>isOverride: 字段是否重载（第4.4.4节）另一个字段。</li>
+<li>doc: 字段的文档。这个信息只在如果编译器标记（第6.1节） -D use_rtti_doc 被涉及的时候可用。否则，或者如果字段没有文档，值为 null 。</li>
+<li>get: 字段的读取访问行为（第4.2节）。</li>
+<li>set: 字段的写入访问行为（第4.2节）。</li>
+<li>params: 一个字符串数组，表示字段拥有的类型参数（第3.2节）的名称。 从Haxe 3.2.0 起，这不包括约束（第3.2.1节）。</li>
+<li>platforms: 一个字符串列表表示字段可用的目标平台。</li>
+<li>meta: 字段被注解用的元数据。</li>
+<li>line: 字段定义的行号。这个信息只有字段有一个表达式的时候可用。否则值为null。</li>
+<li>overloads: 字段可用的重载列表，或者如果没有存在的重载则为 null 。</li>
+</ul>
+<p><strong>枚举构造函数信息：</strong><br>name: 构造函数的名称。<br>args: 构造函数的参数列表，如果没有可用参数则为null。<br>doc: 构造函数的文档。这个嘻嘻只有如果编译器标记（第6.1节） -D use_rtti_doc 被涉及的时候才可用。否则，或者如果构造函数没有文档，值为null。<br>platforms: 一个字符串列表，表示构造函数可用的目标平台。<br>meta: 构造函数被注解的元数据。</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

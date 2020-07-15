@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"6.语言特性/6.5.字符串插值/6.5.字符串插值.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="6-5-字符串插值"><a href="#6-5-字符串插值" class="headerlink" title="6.5.字符串插值"></a>6.5.字符串插值</h1><p>使用Haxe 3 ，通过字符串插值，不再需要手动连接字符串的各部分。一个特定的标识符，通过美元符号 $ 在一个单引号括起来的字符串中，像连接标识符一样被执行：</p>
+<blockquote>
+<p>With Haxe 3 it is no longer necessary to manually concatenate parts of a string due to the introduction of String Interpolation. Special identiﬁers, denoted by the dollar sign $ within a String enclosed by single-quote ’ characters, are evaluated as if they were concatenated identiﬁers:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">12</span>; </span><br><span class="line"><span class="comment">// The value of x is 12 </span></span><br><span class="line"><span class="built_in">trace</span>(’The value of x is $x’);</span><br></pre></td></tr></table></figure>
+<p>此外，可以包括完整的表达式到字符串中，通过使用 ${expr} ，expr 是任何有效的Haxe 表达式：</p>
+<blockquote>
+<p>Furthermore, it is possible to include whole expressions in the string by using ${expr}, with expr being any valid Haxe expression:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">12</span>; </span><br><span class="line"><span class="comment">// The sum of 12 and 3 is 15 </span></span><br><span class="line"><span class="built_in">trace</span>(’The sum of $x and <span class="number">3</span> is $&#123;x + <span class="number">3</span>&#125;’);</span><br></pre></td></tr></table></figure>
+<p>字符串插值是一个编译时功能，不会对运行时性能产生影响。上面的例子和手动连接是等效的，和手动连接编译器生成相同的内容：</p>
+<blockquote>
+<p>String interpolation is a compile-time feature and has no impact on the runtime. The above example is equivalent to manual concatenation, which is exactly what the compiler generates:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">trace</span>(<span class="string">"The sum of "</span> + x + </span><br><span class="line">    <span class="string">" and 3 is "</span> + (x + <span class="number">3</span>));</span><br></pre></td></tr></table></figure>
+<p>当然，使用单引号括起来的字符串即使没有任何插值仍然是有效的，但是注意美元符号因为它会触发插值。如果一个实际的美元符号被使用，可以使用 $$ 双美元符号代替。</p>
+<blockquote>
+<p>Of course the use of single-quote enclosed strings without any interpolation remains valid, but care has to be taken regarding the $ character as it triggers interpolation. If an actual dollar-sign should be used in the string, $$ can be used.</p>
+</blockquote>
+<p><strong>Haxe3之前的字符串插值</strong></p>
+<blockquote>
+<p><strong>花絮</strong>： Haxe3之前的字符串插值<br>从Haxe 2.09之后字符串插值就作为一个Haxe功能被引入。在那之前，必须使用宏 Std.format，跟新的字符串插值语法相比，即慢而且不够灵活。<br>[warning] <strong>Trivia</strong>: String Interpolation before Haxe 3<br>String Interpolation has been a Haxe feature since version 2.09. Back then, the macro Std.format had to be used, being both slower and less comfortable than the new string interpolation syntax.</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

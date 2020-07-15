@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"6.语言特性/6.语言特性.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="6-语言特性"><a href="#6-语言特性" class="headerlink" title="6.语言特性"></a>6.语言特性</h1><p><strong>抽象类型</strong>（第2.8节）：<br>一个抽象类型是一个编译时构造，在运行时以一个不同的方式表示。这允许给存在的类型一个全新的意义。</p>
+<blockquote>
+<p>Abstract types (2.8):<br>An abstract type is a compile-time construct which is represented in a different way at runtime. This allows giving a whole new meaning to existing types.</p>
+</blockquote>
+<p><strong>外部类</strong>（第6.2节）：<br>外部类可以被用于以一个类型安全的方式描述目标语言特定的交互。</p>
+<blockquote>
+<p>Extern classes (6.2):<br>Externs can be used to describe target-speciﬁc interaction in a type-safe manner.</p>
+</blockquote>
+<p><strong>匿名结构</strong>（第2.5节）：<br>数据可以被简单的组织为匿名结构，减少小型数据类的必要性。</p>
+<blockquote>
+<p>Anonymous structures (2.5):<br>Data can easily be grouped in anonymous structures, minimizing the necessity of small data classes.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> point = &#123; x: <span class="type">0</span>, y: <span class="type">10 </span>&#125;; </span><br><span class="line">point.x += <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>数组推导</strong>（第6.6节）：<br>使用 for 循环和一些逻辑快速创建和填充数组。</p>
+<blockquote>
+<p>Array Comprehension (6.6):<br>Create and populate arrays quickly using for loops and logic.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> evenNumbers = [ <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0.</span>.<span class="number">.100</span>) <span class="keyword">if</span> (i\%<span class="number">2</span>==<span class="number">0</span>) i ];</span><br></pre></td></tr></table></figure>
+<p><strong>类，接口和继承</strong>（第2.3节）：<br>Haxe允许用类组织代码，使其成为一个面向对象语言。通常相关的功能如Jave等语言所支持的，包括继承和接口。</p>
+<blockquote>
+<p>Classes, interfaces and inheritance (2.3):<br>Haxe allows structuring code in classes, making it an object-oriented language. Common related features known from languages such as Java are supported, including inheritance and interfaces.</p>
+</blockquote>
+<p><strong>条件编译</strong>（第6.1节）：<br>条件编译允许根据编译参数编译特定的代码。这有助于抽象目标语言特定的差异，但是也可以用于其他的目的，如更详细的调试。</p>
+<blockquote>
+<p>Conditional compilation (6.1):<br>Conditional Compilation allows compiling speciﬁc code depending on compilation parameters. This is instrumental for abstracting target-speciﬁc differences,but can also be used for other purposes, such as more detailed debugging.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\<span class="meta">#<span class="meta-keyword">if</span> js </span></span><br><span class="line">    js.Browser.alert(<span class="string">"Hello"</span>);</span><br><span class="line">\<span class="meta">#<span class="meta-keyword">elseif</span> sys </span></span><br><span class="line">    Sys.println(<span class="string">"Hello"</span>); </span><br><span class="line">\<span class="meta">#<span class="meta-keyword">end</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>（广义的）代数数据类型</strong>（第2.4节）：<br>结构可以通过代数数据类型（ADT）描述，如Haxe语言中的枚举。除此之外，Haxe支持它们的广义的变体如GADT。</p>
+<blockquote>
+<p>(Generalized) Algebraic Data Types (2.4):<br>Structure can be expressed through algebraic data types (ADT), which are known as enums in the Haxe Language. Furthermore, Haxe supports their generalized variant known as GADT.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Result</span> &#123;</span> </span><br><span class="line">    Success(data:<span class="type">Array</span>&lt;<span class="keyword">Int</span>&gt;); </span><br><span class="line">    UserError(msg:<span class="type">String</span>); </span><br><span class="line">    SystemError(msg:<span class="type">String</span>, position:<span class="type">PosInfos</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>内联调用</strong>（第4.4.2节）：<br>函数可以被设计为内联，使它们的代码直接插入调用的位置。通过手动的内联不用使代码重复这可以产生显著的效能提升。</p>
+<blockquote>
+<p>Inlined calls (4.4.2):<br>Functions can be designated as being inline, allowing their code to be inserted at call-site. This can yield signiﬁcant performance beneﬁts with out resorting to code duplication via manual inlining.</p>
+</blockquote>
+<p><strong>迭代器</strong>（第6.7节）：<br>迭代一组值，例如一个数组的元素，在Haxe中可以很容易的迭代。定制类可以快速的实现迭代器功能来允许迭代。</p>
+<blockquote>
+<p>Iterators (6.7):<br>Iterating over a set of values, e.g. the elements of an array, is very easy in Haxe courtesy of iterators. Custom classes can quickly implement iterator functionality to allow iteration.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (i <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]) &#123; </span><br><span class="line">    <span class="built_in">trace</span>(i); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>局部函数和闭包</strong>（第5.11节）：<br>Haxe中的函数不限于类字段，并可以被声明为表达式，允许强大的闭包。</p>
+<blockquote>
+<p>Local functions and closures (5.11):<br>Functions in Haxe are not limited to class ﬁelds and can be declared in expressions as well, allowing powerful closures.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> buffer = <span class="string">""</span>; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">append</span></span>(s:<span class="type">String</span>) &#123; </span><br><span class="line">    buffer += s; </span><br><span class="line">&#125; </span><br><span class="line">append(<span class="string">"foo"</span>); </span><br><span class="line">append(<span class="string">"bar"</span>); </span><br><span class="line"><span class="built_in">trace</span>(buffer); <span class="comment">// foobar</span></span><br></pre></td></tr></table></figure>
+<p><strong>元数据</strong>（第6.9节）：<br>添加元数据到字段，类或者表达式。这可以和编译器、宏，或者运行时的类沟通信息。</p>
+<blockquote>
+<p>Metadata (6.9):<br>Add metadata to ﬁelds, classes or expressions. This can communicate information to the compiler, macros, or runtime classes.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; </span><br><span class="line">    @range(<span class="number">1</span>, <span class="number">8</span>) <span class="keyword">var</span> value:<span class="type">Int</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="built_in">trace</span>(haxe.rtti.Meta.getFields(MyClass).value.range); <span class="comment">// [1,8]</span></span><br></pre></td></tr></table></figure>
+<p><strong>静态扩展</strong>（第6.3节）：<br>存在的类和其它类型可以被额外的功能来扩展，通过使用静态扩展。</p>
+<blockquote>
+<p>Static Extensions (6.3):<br>Existing classes and other types can be augmented with additional functionality through using static extensions.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> StringTools; </span><br><span class="line"><span class="string">" Me &amp; You "</span>.trim().htmlEscape();</span><br></pre></td></tr></table></figure>
+<p><strong>字符串插值</strong>（第6.5节）：<br>字符串通过一个单引号声明，可以在当前的上下文访问变量。</p>
+<blockquote>
+<p>String Interpolation (6.5):<br>Strings declared with a single quotes are able to access variables in the current context.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">trace</span>(’My name is $name and I work <span class="keyword">in</span> $&#123;job.industry&#125;’);</span><br></pre></td></tr></table></figure>
+<p><strong>偏函数应用</strong>（第6.8节）：<br>任何函数可以应用为局部的，提供某些参数的值，然后保留其它的作为之后的字段。</p>
+<blockquote>
+<p>Partial function application (6.8):<br>Any function can be applied partially, providing the values of some arguments and leaving the rest to be ﬁlled in later.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> map = <span class="keyword">new</span> <span class="type">haxe</span>.ds.IntMap(); </span><br><span class="line"><span class="keyword">var</span> setToTwelve = map.<span class="keyword">set</span>.bind(<span class="literal">_</span>, <span class="number">12</span>);</span><br><span class="line">setToTwelve(<span class="number">1</span>);</span><br><span class="line">setToTwelve(<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>模式匹配</strong>（第6.4节）：<br>复杂的结构可以被根据模式来匹配，从一个枚举或者一个结构中提取信息，并对特定的值组合定义特定的操作。</p>
+<blockquote>
+<p>Pattern Matching (6.4):<br>Complex structures can be matched against patterns, extracting information from an enum or a structure and deﬁning speciﬁc operations for speciﬁc value combination.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123; foo: <span class="type">12 </span>&#125;; </span><br><span class="line"><span class="keyword">switch</span> (a) &#123; </span><br><span class="line">    <span class="keyword">case</span> &#123; foo: <span class="type">i </span>&#125;: <span class="type">trace</span>(i); </span><br><span class="line">    <span class="keyword">default</span>: <span class="type"></span></span><br><span class="line"><span class="type"></span>&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>属性</strong>（第4.2节）：<br>变量类字段可以被涉及为属性，通过定制的read和write访问，可以更精细的访问控制。</p>
+<blockquote>
+<p>Properties (4.2):<br>Variable class ﬁelds can be designed as properties with custom read and write access, allowing ﬁne grained access control.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">var</span> color(<span class="keyword">get</span>,<span class="keyword">set</span>); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">get_color</span></span>() &#123; </span><br><span class="line">    <span class="keyword">return</span> element.style.backgroundColor; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">set_color</span></span>(c:<span class="type">String</span>) &#123; </span><br><span class="line">    <span class="built_in">trace</span>(’Setting background of element to $c’); </span><br><span class="line">    <span class="keyword">return</span> element.style.backgroundColor = c; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>访问控制</strong>（第6.10节）：<br>访问控制语言特性使用Haxe元数据语法来禁止或者允许访问类或者字段。</p>
+<blockquote>
+<p>Access control (6.10):<br>The access control language feature uses the Haxe metadata syntax to force or allow access classes or ﬁelds.</p>
+</blockquote>
+<p><strong>类型参数、约束和变异</strong>（第3.2节）：<br>类型可以通过类型参数来参数化，使类型化的容器和其它复杂的数据结构可用。类型参数也可以被约束为某些类型并遵守变异规则。</p>
+<blockquote>
+<p>Type Parameters, Constraints and Variance (3.2):<br>Types can be parametrized with type parameters, allowing typed containers and other complex data structures. Type parameters can also be constrained to certain types and respect variance rules.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">Main</span>&lt;<span class="title">A</span>&gt; </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        <span class="keyword">new</span> <span class="type">Main</span>&lt;<span class="keyword">String</span>&gt;(<span class="string">"foo"</span>); </span><br><span class="line">        <span class="keyword">new</span> <span class="type">Main</span>(<span class="number">12</span>); <span class="comment">// use type inference </span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">new</span></span>(a:<span class="type">A</span>) &#123; &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

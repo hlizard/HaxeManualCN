@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"10.标准库/10.2.数据结构/10.2.1.数组.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="10-2-1-数组"><a href="#10-2-1-数组" class="headerlink" title="10.2.1.数组"></a>10.2.1.数组</h1><p>一个数组是一个元素的集合。它有一个类型参数（第3.2节），对应这些元素的类型。数组可以被通过以下三种方式创建：</p>
+<ul>
+<li>使用它们的构造函数 ： new Array()</li>
+<li>使用数组声明语法（第5.5节） ： [1, 2, 3]</li>
+<li>使用数组推导（第6.6节） ： [for (i in 0…10) if ( i % 2 == 0 ) i]</li>
+</ul>
+<p>数组附带一个 API ，覆盖了多数的用例。另外，它们允许读/写 的数组访问（第5.8节）：</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        <span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; </span><br><span class="line">        <span class="built_in">trace</span>(a[<span class="number">1</span>]); <span class="comment">// 2 </span></span><br><span class="line">        a[<span class="number">1</span>] = <span class="number">1</span>; </span><br><span class="line">        <span class="built_in">trace</span>(a[<span class="number">1</span>]); <span class="comment">// 1 </span></span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于 Haxe 中的数组访问是没有边界的，即，数组保证不会抛出异常，这需要进一步讨论：</p>
+<ul>
+<li>如果对一个不存在的索引做出一个读访问，将根据目标语言返回一个值。</li>
+<li>如果对一个越界的正索引做出一个写访问，则在最后有定义的索引与这个新写入的索引项之间的所有位置插入null（或者静态目标语言（第2.2节）中基本类型（第2.1节）的默认值（第2.2节））。</li>
+<li>如果使用一个负索引写访问，结果是未指定的。</li>
+</ul>
+<p>数组在它的元素之上定义了一个迭代器（第6.7节）。这个迭代通常由编译器优化后以一个 while 循环（第5.14节）配合数组下标进行：</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        <span class="keyword">var</span> scores = [<span class="number">110</span>, <span class="number">170</span>, <span class="number">35</span>];</span><br><span class="line">        <span class="keyword">var</span> sum = <span class="number">0</span>; </span><br><span class="line">        <span class="keyword">for</span> (score <span class="keyword">in</span> scores) &#123; </span><br><span class="line">            sum += score; </span><br><span class="line">        &#125; </span><br><span class="line">        <span class="built_in">trace</span>(sum); <span class="comment">// 315</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Haxe 生成这个优化后的 JavaScript 输出：</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> Main.main = <span class="function"><span class="keyword">function</span></span>() &#123; </span><br><span class="line">    <span class="keyword">var</span> scores = [<span class="number">110</span>,<span class="number">170</span>,<span class="number">35</span>]; </span><br><span class="line">    <span class="keyword">var</span> sum = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">var</span> _g = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">while</span>(_g &lt; scores.length) &#123; </span><br><span class="line">        <span class="keyword">var</span> score = scores[_g]; </span><br><span class="line">        ++_g; </span><br><span class="line">        sum += score; </span><br><span class="line">    &#125;</span><br><span class="line">    console.log(sum); </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>Haxe 不允许混合类型的数组，除非参数类型被限强制为 Dynamic（第2.7节）：</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        <span class="comment">// Compile Error: Arrays of mixed types are only allowed if the type is </span></span><br><span class="line">        <span class="comment">// forced to Array&lt;Dynamic&gt; </span></span><br><span class="line">        <span class="comment">//var myArray = [10, "Bob", false];</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Array&lt;Dynamic&gt; with mixed types </span></span><br><span class="line">        <span class="keyword">var</span> myExplicitArray:<span class="type">Array</span>&lt;<span class="keyword">Dynamic</span>&gt; = [<span class="number">10</span>, <span class="string">"Sally"</span>, <span class="literal">true</span>];</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>花絮</strong>: 动态数组<br>在Haxe 2中，混合类型的数组声明是被允许的。在Haxe 3中，数组只有显式声明为 Array 才可以为混合类型。</p>
+</blockquote>
+<p>查看数组API了解它的方法的详细内容。</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

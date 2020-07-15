@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"4.类字段/4.2.属性/4.2.属性.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="4-2-属性"><a href="#4-2-属性" class="headerlink" title="4.2.属性"></a>4.2.属性</h1><p>变量下面，属性是第二个选项来处理类中的数据。然而不像变量，它们提供更多的控制哪种类型的字段访问被允许，和它如何被生成。通常用处包括：</p>
+<blockquote>
+<p>Next to variables (4.1), properties are the second option for dealing with data on a class. Unlike variables however, they offer more control of which kind of ﬁeld access should be allowed and how it should be generated. Common use cases include:</p>
+</blockquote>
+<ul>
+<li>有一个可以被从任何地方读取，但是只能被从定义类写入的字段</li>
+<li>有一个调用一个getter方法获得读权限的字段</li>
+<li>有一个调用一个setter方法获得写入权限的字段</li>
+</ul>
+<blockquote>
+<ul>
+<li>Have a ﬁeld which can be read from anywhere,but only be written from within the deﬁning class.</li>
+<li>Have a ﬁeld which invokes a getter-method upon read-access.</li>
+<li>Have a ﬁeld which invokes a setter-method upon write-access.</li>
+</ul>
+</blockquote>
+<p>当处理属性时，重要的是理解两种类型的访问：</p>
+<blockquote>
+<p>When dealing with properties, it is important to understand the two kinds of access:</p>
+</blockquote>
+<blockquote>
+<p>定义：读取访问<br> 一个字段的读取访问发生在右手字段访问表达式（第5.7节）使用时。包括通过 obj.field() 形式调用来访问授权读取的字段。<br> 定义：写入访问<br> 一个字段的写入访问发生在一个字段访问表达式被以obj.field=value格式赋一个值的时候。也可能和读取访问联合出现，对于特别的赋值操作符如 += ，表达式形如 obj.field += value 。<br> [warning] Deﬁnition: Read Access<br> A read access to a ﬁeld occurs when a right-hand side ﬁeld access expression (5.7) is used. This includes calls in the form of obj.field(), where field is accessed to be read.</p>
+</blockquote>
+<blockquote>
+<p>Deﬁnition: Write Access<br> A write access to a ﬁeld occurs when a ﬁeld access expression (5.7) is assigned a value in the form of obj.field = value. It may also occur in combination with read access (4.2) for special assignment operators such as += in expressions like obj.field += value.</p>
+</blockquote>
+<p>读取访问和写入访问直接反映在语法形式，如下面的例子：</p>
+<blockquote>
+<p>Read access and write access are directly reﬂected in the syntax, as the following example shows:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">var</span> x(<span class="keyword">default</span>, <span class="literal">null</span>):<span class="type">Int</span>; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>多数情况，和变量的语法类似，实际上适用同样的规则。属性被识别，通过</p>
+<blockquote>
+<p>For the most part, the syntax is similar to variable syntax, and the same rules indeed apply. Properties are identiﬁed by</p>
+</blockquote>
+<ul>
+<li>字段名后开口的括号 ( ，</li>
+<li>后面跟一个特定的访问标识符（这里是 default），</li>
+<li>逗号，隔开</li>
+<li>另一个特殊的访问标识符（这里是null），</li>
+<li>和一个闭口的括号 )</li>
+</ul>
+<blockquote>
+<ul>
+<li>the opening parenthesis ( after the ﬁeld name,</li>
+<li>followed by a special access identiﬁer (here: default),</li>
+<li>with a comma , separating</li>
+<li>another special access identiﬁer (here: null)</li>
+<li>before a closing parenthesis ).</li>
+</ul>
+</blockquote>
+<p>访问标识符定义当字段被读取（第一个标识符）的行为，和写入的行为（第二个标识符）。接受的值为：</p>
+<blockquote>
+<p>The access identiﬁers deﬁne the behavior when the ﬁeld is read (ﬁrst identiﬁer) and written (second identiﬁer). The accepted values are:</p>
+</blockquote>
+<p><strong>default</strong>：如果字段有公开的可见性，则允许普通的字段访问，否则等于 null 访问。<br><strong>null</strong>：只允许从定义的类中访问。<br><strong>get/set</strong>：访问被生成为一个存取器方法。编译器确保存取器可用。<br><strong>dynamic</strong>：类似get/set访问，但是不验证存取器字段的存在。<br><strong>never</strong>：不允许访问</p>
+<blockquote>
+<p><strong>default</strong>: Allows normal ﬁeld access if the ﬁeld has public visibility, otherwise equal to null access.<br><strong>null</strong>: Allows access only from within the deﬁning class.<br><strong>get/set</strong>: Access is generated as a call to an accessor method. The compiler ensures that the accessor is available.<br><strong>dynamic</strong>: Like get/set access, but does not verify the existence of the accessor ﬁeld.<br><strong>never</strong>: Allows no access at all.</p>
+</blockquote>
+<p><strong>存取器方法</strong></p>
+<blockquote>
+<p>定义：存取器方法<br> 一个T类型名为 filed 的字段的一个存取器方法（或者简称为存取器）是一个Void-&gt;T类型名为 get_field 的 getter，或者T-&gt;T类型名为 set_field的setter。<br> [warning] Deﬁnition: Accessor method<br> An accessor method (or short accessor) for a ﬁeld named field of type T is a getter named get_field of type Void-&gt;T or a setter named set_field of type T-&gt;T.</p>
+</blockquote>
+<p><strong>存取器名称</strong></p>
+<blockquote>
+<p>花絮：存取器名称<br> 在Haxe 2中，任意的标识符允许作为访问标识符，可以使定制的存取器方法名是被认可的。这使得部分实现非常难以处理。特别是，Reflect.getProperty() 和 Reflect.setProterty() 必须假定任何名称可能被使用，需要目标生成器生成元信息和执行查找。我们不允许这些标识符，而使用 get_ 和 set_ 命名约定，大大简化了实现。这是Haxe2 和Haxe 3之间一个阻断式的变更。<br> [warning] Trivia: Accessor names<br> In Haxe 2, arbitrary identiﬁers were allowed as access identiﬁers and would lead to custom accessor method names to be admitted. This made parts of the implementation quite tricky todealwith. In particular,Reflect.getProperty() and Reflect.setProperty() had to assume that any name could have been used, requiring the target generators to generate meta-information and perform lookups. We disallowed these identiﬁers and went for the get_ and set_ naming convention which greatly simpliﬁed implementation. This was one of the breaking changes between Haxe 2 and 3.</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

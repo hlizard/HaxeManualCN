@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"10.标准库/10.8.序列化/10.8.1.格式化序列化.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="10-8-1-格式化序列化"><a href="#10-8-1-格式化序列化" class="headerlink" title="10.8.1.格式化序列化"></a>10.8.1.格式化序列化</h1><p>每个支持的值被转换为一个不同前缀字符、后跟需要的数据。</p>
+<ul>
+<li>null: n</li>
+<li>Int: 0为z，或者 i 后跟整数显示（例如 i456）</li>
+<li>Float:<ul>
+<li>NaN ：k</li>
+<li>负无穷 ：m</li>
+<li>正无穷 ：p</li>
+<li>有限的浮点数 ： d 后跟浮点数显示（如d1.45e-8）</li>
+</ul>
+</li>
+<li>Bool ：true 为 t，false 为 f</li>
+<li>String: y 后跟url编码的字符串长度，然后是冒号 : 和url编码（如 y10:hi%20there,“hi there”）</li>
+<li>名称-值 对: 一个序列化的字符串表示名称后跟序列化的值</li>
+<li>结构: o 后跟 名称-值对的列表，以g 终止？（例如，oy1:xi2y1:kng，{x:2, k:null}）</li>
+<li>List: l 后跟序列化的项的列表，后跟h（例如，lnnh ，两个null值的 List）</li>
+<li>Array: a 后跟序列化的项的列表，后跟h。对于多个连续的 null 值， 使用u 后跟null的数量（例如 ai1i2u4i7ni9h ，[1, 2, null, null, null, null, 7， null, 9]）</li>
+<li>Date: v 后跟 date 自己（例如 v2010-01-01 12：45：10）</li>
+<li>haxe.ds.StringMap: b 后跟 名-值对，后跟 h（例如，by1:xi2y1:knh，{“x”=&gt; 2, “k”=&gt; null}）</li>
+<li>haxe.ds.IntMap: q 后跟键值对，后跟h。每个键表示为 :（例如，q:4n:5i45:6i7h ，{4=&gt;null, 5=&gt; 45, 6=&gt;7}）</li>
+<li>haxe.ds.ObjectMap: M 后跟序列化的值对表示键跟值，后跟h</li>
+<li>haxe.io.Bytes: s 后跟 base64编码字节长度，然后冒号 : ，和A-Za-z0-9% 表示的字节码（例如，s3:AAA ，等于0的2字节，s10:SGVsbG8gIQ ，haxe.io.Bytes.ofString(“Hello !”)）</li>
+<li>exception: x 后跟异常值</li>
+<li>类实例: c 后跟序列化的类名，后跟字段的名-值对，后跟g（例如，cy5:Pointy1:xzy1:yzg ，new Point(0, 0)）（有两个整数字段 x 和 y）</li>
+<li>枚举实例 (通过名称): w 后跟序列化的枚举名称，后跟序列化的构造函数名，后跟冒号 : ，后跟参数的数量，后跟参数的值（例如，wy3:Fooy1:A:0 ，Foo.A （无参数），wy3:Fooy1:B:2i4n ，Foo.B(4, null)）</li>
+<li>枚举实例(通过索引): j 后跟序列化的枚举名称，后跟冒号 : ，后跟构造函数的索引（从0开始），后跟冒号 :， 后跟参数的数量，后跟参数的值（例如，jy3:Foo:0:0 ， Foo.A （无参数）， jy3:Foo:1:2i4n ，Foo.B(4, null)）</li>
+<li>缓存引用:<ul>
+<li>String: R 后跟在字符串缓存中相应的索引（例如，R456）</li>
+<li>class, enum 或 structure ： r 后跟对象缓存中的相应索引（如，r42）</li>
+</ul>
+</li>
+<li>自定义: C 后跟类名，后跟自定义序列化数据，后跟 g</li>
+</ul>
+<p>缓存的元素和枚举构造函数从0开始索引。</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

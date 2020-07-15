@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"6.语言特性/6.10.访问控制/6.10.访问控制.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="6-10-访问控制"><a href="#6-10-访问控制" class="headerlink" title="6.10.访问控制"></a>6.10.访问控制</h1><p>当基础的可见性（第4.4.1节）选项不满足需求时可以使用访问控制。访问控制在类层面上和字段层面上都适用，其中涉及两个方向上的访问控制：</p>
+<blockquote>
+<p>Access control can be used if the basic visibility (4.4.1) options are not sufﬁcient. It is applicable at class-level and at ﬁeld-level and knows two directions:</p>
+</blockquote>
+<p>允许访问：目标可通过 <code>:allow(target)</code> 元数据（6.9）提供给一个给定的类或字段进行访问。<br>强制访问：可在一个类或字段中通过 <code>:access(target)</code> 对给定目标进行强制访问。</p>
+<blockquote>
+<p><strong>Allowing access</strong>: The target is granted access to the given class or ﬁeld by using the :allow(target) metadata (6.9).<br><strong>Forcing access</strong>: A target is forced to allow access to the given class or ﬁeld by using the :access(target) metadata (6.9).</p>
+</blockquote>
+<p>其中的 <strong>target</strong> 是一个点路径（dot-path），在不同语境下它可能是：</p>
+<ul>
+<li>一个类字段，</li>
+<li>一个类或者一个抽象类型，</li>
+<li>或者是一个包</li>
+</ul>
+<blockquote>
+<p>In this context, a target can be the dot-path (3.7) to</p>
+<ul>
+<li>a class ﬁeld,</li>
+<li>a class or abstract type, or</li>
+<li>a package.</li>
+</ul>
+</blockquote>
+<p>target 与当前上下文的导入无关，所以必须是一个完整的点路径进行表示。</p>
+<blockquote>
+<p>Target does not respect imports, so the fully qualiﬁed path has to be used.</p>
+</blockquote>
+<p>如果被访问控制所修饰的是一个类或者一个抽象类型，访问控制会被扩展至该类型的所有字段上。同样地，如果它是一个包，访问控制将会扩展至这个包内所有的类型、以及这些类型的所有字段上。</p>
+<blockquote>
+<p>If it is a class or abstract type, access modiﬁcation extends to all ﬁelds of that type. Likewise, if it is a package, access modiﬁcation extends to all types of that package and recursively to all ﬁelds of these types.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@:allow(Main) </span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">private</span> <span class="keyword">var</span> foo: <span class="type">Int</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        MyClass.foo; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里， <code>MyClass.foo</code> 字段可以在 <code>main</code> 方法中被访问，因为 <code>MyClass</code> 被 <code>@:allow(Main)</code> 所修饰。你也可以将修饰改为 <code>@:allow(Main.main)</code> ，而且这两种修饰也都可以修饰于字段 <code>foo</code> 之上而不是类上：</p>
+<blockquote>
+<p>Here, MyClass.foo can be accessed from the main-method because MyClass is annotated with @:allow(Main). This would also work with @:allow(Main.main) and both versions could alternatively be annotated to the ﬁeld foo instead of the class MyClass:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; </span><br><span class="line">    <span class="meta">@:allow(Main.main) </span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">private</span> <span class="keyword">var</span> foo: <span class="type">Int</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        MyClass.foo; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而如果一个类的设计不允许被修饰为这类访问控制，那么可以使用强制访问来进行访问：</p>
+<blockquote>
+<p>If a type cannot be modiﬁed to allow this kind of access, the accessing method may force access:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">private</span> <span class="keyword">var</span> foo: <span class="type">Int</span>;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="meta">@:access(MyClass.foo) </span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        MyClass.foo; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通过 <code>@access(MyClass.foo)</code> 访问控制修饰使得 <code>main</code> 方法可以越过 <code>foo</code> 字段的可见性修饰。</p>
+<blockquote>
+<p>The @:access(MyClass.foo) annotation effectively subverts the visibility of the foo ﬁeld within the main-method.</p>
+</blockquote>
+<p><strong>元数据的选择</strong></p>
+<blockquote>
+<p>花絮：元数据的选择<br>访问控制的特性使用 Haxe 的元数据提供，而不是通过额外的语法提供。有如下几个理由：<br>额外的语法通常使得语言解析变得更加复杂，同时会导致加入太多关键字。<br>额外的语法需要另外的学习成本。<br>元数据语法足够灵活，且可以通过它来实现这一需要。<br>元数据可以通过Haxe的宏进行 访问/生成/修改。</p>
+<p>当然，使用元数据语法的弊端是，如果元数据的关键字拼写错误（例如@:acesss）或者类/包名拼写错误，将不会得到错误报告。尽管如此，如果你尝试访问一个不被允许访问的私有字段时，编译器会报错，因为这不可能是一个不被觉察的错误。</p>
+</blockquote>
+<blockquote>
+<p><strong>Trivia</strong>: On the choice of metadata<br>The access control language feature uses the Haxe metadata syntax instead of additional language-speciﬁc syntax. There are several reasons for that:</p>
+<ul>
+<li>Additional syntax often adds complexity to the language parsing, and also adds (too) many keywords.</li>
+<li>Additional syntax requires additional learning by the language user,whereas metadata syntax is something that is already known.</li>
+<li>The metadata syntax is ﬂexible enough to allow extension of this feature.</li>
+<li>The metadata can be accessed/generated/modiﬁed by Haxe macros.<br>Of course, the main drawback of using metadata syntax is that you get no error report in case you misspell either the metadata key (@:acesss for instance) or the class/package name. However, with this feature you will get an error when you try to access a private ﬁeld that you are not allowed to, therefore there is no possibility for silent errors.</li>
+</ul>
+</blockquote>
+<p><strong>Haxe 3.1.0 以后</strong></p>
+<blockquote>
+<p><strong>Since Haxe 3.1.0</strong></p>
+</blockquote>
+<p>如果允许访问一个 接口（第2.3.3节），它延伸到所有实现这个接口的类：</p>
+<blockquote>
+<p>If access is allowed to an interface(2.3.3),it extends to all classes implementing that interface:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123; </span><br><span class="line">    <span class="meta">@:allow(I) </span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">private</span> <span class="keyword">var</span> foo: <span class="type">Int</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">I</span> </span>&#123; &#125; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> <span class="keyword"><span class="keyword">implements</span> <span class="type">I</span></span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123; </span><br><span class="line">        MyClass.foo; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对于访问授权父类，也是同样的，这种情况会延伸到所有的子类：</p>
+<blockquote>
+<p>This is also true for access granted to parent classes, in which case it extends to all child classes.</p>
+</blockquote>
+<p><strong>破坏性功能</strong></p>
+<blockquote>
+<p><strong>花絮</strong>：破坏性功能<br>子类和实现类的访问扩展只支持Haxe 3.0以后。当编写这本手册时发现这部分的访问控制实现是容易缺失的。<br>[warning] <strong>Trivia</strong>: Broken feature<br>Access extension to child classes and implementing classes was supposed to work in Haxe 3.0 and even documented accordingly. While writing this manual it was found that this part of the access control implementation was simply missing.</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

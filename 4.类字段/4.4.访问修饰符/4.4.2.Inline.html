@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"4.类字段/4.4.访问修饰符/4.4.2.Inline.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"4.类字段","type":"link","path":"4.类字段/4.类字段.html"},{"text":"5.表达式","type":"link","path":"5.表达式/5.表达式.html"},{"text":"6.语言特性","type":"link","path":"6.语言特性/6.语言特性.html"},{"text":"7.编译器用法","type":"link","path":"7.编译器用法/7.编译器用法.html"},{"text":"8.编译器功能","type":"link","path":"8.编译器功能/8.编译器功能.html"},{"text":"9.宏","type":"link","path":"9.宏/9.宏.html"},{"text":"10.标准库","type":"link","path":"10.标准库/10.标准库.html"},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="4-4-2-Inline"><a href="#4-4-2-Inline" class="headerlink" title="4.4.2.Inline"></a>4.4.2.Inline</h1><p>inline 关键字允许函数体被直接插入到它们调用位置。这是一个强大的优化工具，但是应该审慎使用，并不是所有函数都适用inline行为。下面的例子演示了基本的用法：</p>
+<blockquote>
+<p>The inline keyword allows function bodies to be directly inserted in place of calls to them. This can be a powerful optimization tool,but should be used judiciously as not all functions are good candidates for inline behavior. The following example demonstrates the basic usage:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="function"><span class="keyword">function</span> <span class="title">mid</span></span>(s1:<span class="type">Int</span>, s2:<span class="type">Int</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> (s1 + s2) / <span class="number">2</span>; </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">1</span>; </span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">2</span>; </span><br><span class="line">        <span class="keyword">var</span> c = mid(a, b); </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>生成的JavaScript输出揭示了内联的效果：</p>
+<blockquote>
+<p>The generated JavaScript output reveals the effect of inline:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> </span>() &#123; <span class="string">"use strict"</span>; </span><br><span class="line">    <span class="keyword">var</span> Main = <span class="function"><span class="keyword">function</span></span>() &#123; &#125; </span><br><span class="line">    Main.main = <span class="function"><span class="keyword">function</span></span>() &#123; </span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">1</span>; </span><br><span class="line">        <span class="keyword">var</span> b = <span class="number">2</span>; </span><br><span class="line">        <span class="keyword">var</span> c = (a + b) / <span class="number">2</span>; </span><br><span class="line">    &#125;</span><br><span class="line">    Main.main(); </span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>显然，字段mid被生成的函数体(s1 + s2)/2替换掉了调用 mid(a,b)，s1被替换为 a ，s2被替换为b。这可以避免一个函数调用，根据目标和出现的频率，可以产生显著的性能改进。</p>
+<blockquote>
+<p>As evident, the function body (s1 + s2) / 2 of ﬁeld mid was generated in place of the call to mid(a, b), with s1 being replaced by a and s2 being replaced by b. This avoids a function call which,depending on the target and frequency of occurrences,may yield noticeable performance improvements.</p>
+</blockquote>
+<p>并不总是容易判断是否一个函数要限定为内联函数。没有编写表达式的短函数（如a=形式的赋值）通常是一个好的选择，但是有时候更复杂的函数也可以使用内联。然而，在一些情况下内联可以实际上损害部分性能，例如，因为编译器必须创建临时变量服务于复杂的表达式。</p>
+<blockquote>
+<p>It is not always easy to judge if a function qualiﬁes for being inline. Short functions that have no writing expressions (such as a = assignment) are usually a good choice, but even more complex functions can be candidates. However, in some cases inlining can actually be detrimental to performance, e.g. because the compiler has to create temporary variables for complex expressions.</p>
+</blockquote>
+<p>内联并不保证执行。编译器可能由于多种原因取消内联，用户也可以通过 –no-inline 命令行参数来禁止内联。唯一的例外是如果类是 extern（第6.2节）或者如果泪字段有 :extern 元数据（第6.9节），这种情况内联被禁止。如果她不能被执行，编译器发出一个错误。</p>
+<blockquote>
+<p>Inline is not guaranteed to be done. The compiler might cancel inlining for various reasons or a user could supply the –no-inline command line argument to disable inlining. The only exception is if the class is extern (6.2) or if the class ﬁeld has the :extern metadata (6.9), in which case inline is forced. If it cannot be done, the compiler emits an error.</p>
+</blockquote>
+<p>重要的是依赖内联时要记得这个：</p>
+<blockquote>
+<p>It is important to remember this when relying on inline:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span> </span>() &#123; &#125; </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">test</span></span>() &#123; </span><br><span class="line">        <span class="keyword">if</span> (Math.random() &gt; <span class="number">0.5</span>) &#123; </span><br><span class="line">            <span class="keyword">return</span> <span class="string">"ok"</span>; </span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; </span><br><span class="line">            error(<span class="string">"random failed"</span>); </span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@:extern static inline function error(s:String) &#123; </span></span><br><span class="line">        <span class="keyword">throw</span> s; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果正确的调用error是内联的，程序编译正确，因为控制流检查器满意内联的throw（第5.22节）表达式。如果内联部执行，编译器只发现一个error函数的调用并发出错误 A return  is missing here。</p>
+<blockquote>
+<p>If the call to error is inlined the program compiles correctly because the control ﬂow checker is satisﬁed due to the inlined throw (5.22) expression. If inline is not done,the compiler only sees a function call to error and emits the error A return is missing here.</p>
+</blockquote>
+<h5 id="Inline-variables"><a href="#Inline-variables" class="headerlink" title="Inline variables"></a><a href="https://haxe.org/manual/class-field-inline.html#inline-variables" target="_blank" rel="noopener">Inline variables</a></h5><p>The <code>inline</code> keyword can also be applied to variables, but only when used together with <code>static</code>. An inline variable must be initialized to a <a href="https://haxe.org/manual/expression-constants.html" target="_blank" rel="noopener">constant</a>, otherwise the compiler emits an error. The value of the variable is used everywhere in place of the variable itself.</p>
+<p>The following code demonstrates the usage of an inline variable:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Main &#123;</span><br><span class="line">  static inline final language = &quot;Haxe&quot;;</span><br><span class="line"></span><br><span class="line">  static public function main() &#123;</span><br><span class="line">    trace(language);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The generated JavaScript shows that the <code>language</code> variable is not present anymore:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(function ($global) &#123; &quot;use strict&quot;;</span><br><span class="line">var Main = function() &#123; &#125;;</span><br><span class="line">Main.main = function() &#123;</span><br><span class="line">    console.log(&quot;root/program/Main.hx:5:&quot;,&quot;Haxe&quot;);</span><br><span class="line">&#125;;</span><br><span class="line">Main.main();</span><br><span class="line">&#125;)(&#123;&#125;);</span><br></pre></td></tr></table></figure>
+<p>Note that even though we call such kind of fields “variables”, inline variables can never be reassigned as the value must be known at compile-time to be inlined at the place of usage. This makes inline variables a subset of <a href="https://haxe.org/manual/class-field-final.html" target="_blank" rel="noopener"><code>final</code> fields</a>, hence the usage of the <code>final</code> keyword in the code example above.</p>
+<blockquote>
+<h5 id="Trivia-inline-var"><a href="#Trivia-inline-var" class="headerlink" title="Trivia: inline var"></a><a href="https://haxe.org/manual/class-field-inline.html#trivia-inline-var" target="_blank" rel="noopener">Trivia: <code>inline var</code></a></h5><p>Prior to Haxe 4, there was no <code>final</code> keyword. The inline variables feature however was present for a long time, using the <code>var</code> keyword instead of <code>final</code>. Using <code>inline var</code> still works in Haxe 4 but might be deprecated in the future, because <code>final</code> is more appropriate.</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
