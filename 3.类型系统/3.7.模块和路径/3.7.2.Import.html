@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>Haxe 中文手册 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"3.类型系统/3.7.模块和路径/3.7.2.Import.html","title":""},"data":{"navigation":{"logo":{"text":"Haxe 中文手册","type":"link","path":"index.html"},"main":[{"text":"目录","type":"label","children":null},{"text":"2.类型","type":"link","path":"2.类型/2.类型.html","children":[{"text":"2.1.基本类型","type":"link","path":"2.类型/2.1.基本类型/2.1.基本类型.html","children":[{"text":"2.1.1.数值类型","type":"link","path":"2.类型/2.1.基本类型/2.1.1.数值类型.html"},{"text":"2.1.2.溢出","type":"link","path":"2.类型/2.1.基本类型/2.1.2.溢出.html"}]},{"text":"2.2.为空性","type":"link","path":"2.类型/2.2.为空性/2.2.为空性.html"},{"text":"2.3.类实例","type":"link","path":"2.类型/2.3.类实例/2.3.类实例.html"},{"text":"2.4.枚举实例","type":"link","path":"2.类型/2.3.类实例/2.4.枚举实例.html"},{"text":"2.5.匿名结构","type":"link","path":"2.类型/2.5.匿名结构/2.5.匿名结构.html","children":[{"text":"2.5.1.结构值的JSON形式","type":"link","path":"2.类型/2.5.匿名结构/2.5.1.结构值的JSON形式.html"},{"text":"2.5.2.结构类型的类记法","type":"link","path":"2.类型/2.5.匿名结构/2.5.2.结构类型的类记法.html"},{"text":"2.5.3.可选字段","type":"link","path":"2.类型/2.5.匿名结构/2.5.3.可选字段.html"},{"text":"2.5.4.性能影响","type":"link","path":"2.类型/2.5.匿名结构/2.5.4.性能影响.html"},{"text":"2.5.5.扩展","type":"link","path":"2.类型/2.5.匿名结构/2.5.5.扩展.html"}]},{"text":"2.6.函数类型","type":"link","path":"2.类型/2.6.函数类型/2.6.函数类型.html"},{"text":"2.7.动态类型","type":"link","path":"2.类型/2.7.动态类型/2.7.动态类型.html"},{"text":"2.8.抽象类型","type":"link","path":"2.类型/2.8.抽象类型/2.8.抽象类型.html"},{"text":"2.9.单形","type":"link","path":"2.类型/2.9.单形/2.9.单形.html"}]},{"text":"3.类型系统","type":"link","path":"3.类型系统/3.类型系统.html","children":[{"text":"3.1.Typedef","type":"link","path":"3.类型系统/3.1.Typedef/3.1.Typedef.html"},{"text":"3.2.类型参数","type":"link","path":"3.类型系统/3.2.类型参数/3.2.类型参数.html"},{"text":"3.3.泛型","type":"link","path":"3.类型系统/3.3.泛型/3.3.泛型.html"},{"text":"3.4.变异","type":"link","path":"3.类型系统/3.4.变异/3.4.变异.html"},{"text":"3.5.一致性检查","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.一致性检查.html","children":[{"text":"3.5.1.类与接口","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.1.类与接口.html"},{"text":"3.5.2.结构子类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.2.结构子类型.html"},{"text":"3.5.3.单形","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.3.单形.html"},{"text":"3.5.4.函数返回","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.4.函数返回.html"},{"text":"3.5.5.通用基本类型","type":"link","path":"3.类型系统/3.5.一致性检查/3.5.5.通用基本类型.html"}]},{"text":"3.6.类型推断","type":"link","path":"3.类型系统/3.6.类型推断/3.6.类型推断.html"},{"text":"3.7.模块和路径","type":"link","path":"3.类型系统/3.7.模块和路径/3.7.模块和路径.html"}]},{"text":"支持与反馈","type":"label","children":null},{"text":"Repository Link","type":"link","path":"https://github.com/NulllStack/HaxeManualCN"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Haxe 中文手册</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="3-7-2-Import"><a href="#3-7-2-Import" class="headerlink" title="3.7.2.Import"></a>3.7.2.Import</h1><p>如果一个类型路径在一个 .hx 文件中会多次用到，可以使用 import 导入来缩短它。这可以使我们省略包名来使用类型：</p>
+<blockquote>
+<p>If a type path is used multiple times in a .hx ﬁle,it might make sense to use an import to shorten it. This allows omitting the package when using the type:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> haxe.ds.StringMap; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;    </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        <span class="comment">// instead of: new haxe.ds.StringMap(); </span></span><br><span class="line">        <span class="keyword">new</span> <span class="type">StringMap</span>(); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>随着haxe.ds.StringMap被导入之后，编译器就可以通过这个包解析 main 函数中不合法的标识符 StringMap。模块 StringMap 被告知需要被导入到当前的文件 。</p>
+<blockquote>
+<p>With haxe.ds.StringMap being imported in the ﬁrst line,the compiler is able to resolve the unqualiﬁed identiﬁer StringMap in the main function to this package. The module StringMap is said to be imported into the current ﬁle.</p>
+</blockquote>
+<p>在这个例子中，我们实际上导入了一个模块，而不只是模块中的一个类型。这意味着所有在被导入的模块中定义的类型都是可用的。</p>
+<blockquote>
+<p>In this example, we are actually importing a module, not just a speciﬁc type within that module. This means that all types deﬁned within the imported module are available:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> haxe.macro.Expr; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        <span class="keyword">var</span> e:<span class="type">Binop </span>= OpAdd; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>类型 Binop 是haxe.macro.Expr模块中一个 enum（第2.4节）声明，因此在这个模块被导入之后就可以使用了。如果我们只要导入模块中的一个特定类型，例如，import  haxe.macro.Expr.ExprDef，程序会编译失败，提示Binop类没有找到。</p>
+<blockquote>
+<p>The type Binop is an enum (2.4) declared in the module haxe.macro.Expr,and thus available after the import of said module. If we were to import only a speciﬁc type of that module, e.g. import haxe.macro.Expr.ExprDef, the program would fail to compile with Class not found : Binop.</p>
+</blockquote>
+<p>关于导入有几个方面需要了解：</p>
+<blockquote>
+<p>There are several aspects worth knowing about importing:</p>
+</blockquote>
+<ul>
+<li>最底部的导入指令具有最高的优先级（详见 解析顺序（第3.7.3节））。</li>
+<li>静态扩展（第6.3节）关键字 using 具有 import 的效果。</li>
+<li>如果一个enum被导入（直接或作为模块的一部分被导入），所有它的enum构造函数（第2.4.1节）同样也被导入（这就是为什么在上面例子中允许 opAdd 的用法）。</li>
+</ul>
+<blockquote>
+<ul>
+<li>The bottommost import takes priority (detailed in Resolution Order (Section 3.7.3)).</li>
+<li>The static extension (6.3) keyword using implies the effect of import.</li>
+<li>If an enum is imported (directly or as part of a module import), all its enum constructors (2.4.1) are also imported (this is what allows the OpAdd usage in the above example).</li>
+</ul>
+</blockquote>
+<p>此外，也可以导入类的静态字段并不受限制的使用它们。</p>
+<blockquote>
+<p>Furthermore, it is also possible to import static ﬁelds (4) of a class and use them unqualiﬁed:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Math.random; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        random(); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>必须特别注意，字段名或者局部变量名和包名的冲突：因为它们优先级高于包，如果有一个名为haxe的局部变量，它们会会阻挡整个haxe包的使用。</p>
+<blockquote>
+<p>Special care has to be taken with ﬁeld names or local variable names that conﬂict with a package name: Since they take priority over packages, a local variable named haxe blocks off usage the entire haxe package.</p>
+</blockquote>
+<p><strong>通配符导入</strong>：Haxe允许使用 .* 使 import可以导入一个包中所有的模块、模块中的所有类型或者类型中的所有静态字段。通过以下例子重点了解此类导入操作只能覆盖同级的访问（only crosses a single level）：</p>
+<blockquote>
+<p><strong>Wildcard import</strong> Haxe allows using .* to allow import of all modules in a package, all types in a module or all static ﬁelds in a type. It is important to understand that this kind of import only crosses a single level as we can see in the following example:</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> haxe.macro.*; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        <span class="keyword">var</span> expr:<span class="type">Expr </span>= <span class="literal">null</span>; </span><br><span class="line">        <span class="comment">//var expr:ExprDef = null; // Class not found : ExprDef </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用通配符到haxe.macro的导入，使这个包中的 Expr 模块可以被访问，但是它<strong>不能使 Expr 模块的子类型 ExprDef 被访问</strong>。这个规则当一个模块被导入时也扩展到静态字段。</p>
+<blockquote>
+<p>Using the wildcard import on haxe.macro allows accessing Expr which is a module in this package, but it does not allow accessing ExprDef which is a sub-type of the Expr module. This rule extends to static ﬁelds when a module is imported.</p>
+</blockquote>
+<p>当使用通配符导入一个包，编译器并不会立即处理包中的所有模块。这意味着这些模块除非被明确使用否则不会被作为输出的一部分生成。</p>
+<blockquote>
+<p>When using wildcard imports on a package, the compiler does not eagerly process all modules in that package; modules that have not been used explicitly are not part of the generated output.</p>
+</blockquote>
+<p><strong>使用别名导入</strong> 如果一个类型或静态字段在一个导入它的模块中经常使用，可以为它引入别名为一个简短的名字。这也可以用来通过给定一个唯一的标识符来消除命名冲突。</p>
+<blockquote>
+<p><strong>Import with alias</strong> If a type or static ﬁeld is used a lot in an importing module it might help to alias it to a shorter name. This can also be used to disambiguate conﬂicting names by giving them a unique identiﬁer.</p>
+</blockquote>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="keyword">String</span>.fromCharCode <span class="keyword">in</span> f; </span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123; </span><br><span class="line">    <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">        <span class="keyword">var</span> c1 = f(<span class="number">65</span>); </span><br><span class="line">        <span class="keyword">var</span> c2 = f(<span class="number">66</span>);</span><br><span class="line">        <span class="built_in">trace</span>(c1 + c2); <span class="comment">// AB </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里我们导入String.fromCharCode为 f，使我们可以使用 f(65) 和 f(66)。达到和局部变量一样的使用，这个方法是编译时功能，不会有运行时开销。</p>
+<blockquote>
+<p>Here we import String.fromCharCode as f which allows us to use f(65) and f(66). While the same could be achieved with a local variable, this method is compile-time exclusive and guaranteed to have no run-time overhead.</p>
+</blockquote>
+<p><strong>从Haxe3.2.0后 ，Haxe允许使用更自然的 as 替代 in </strong>。</p>
+<blockquote>
+<p><strong>Since Haxe 3.2.0</strong><br> Haxe also allows the more natural as in place of in.</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
